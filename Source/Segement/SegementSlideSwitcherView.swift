@@ -20,9 +20,9 @@ public protocol SegementSlideSwitcherViewDelegate: class {
     func segementSwitcherView(_ segementSlideSwitcherView: SegementSlideSwitcherView, showBadgeAtIndex index: Int) -> BadgeType
 }
 
-public class SegementSlideSwitcherView: UIView {
+open class SegementSlideSwitcherView: UIView {
     
-    private let scrollView = UIScrollView()
+    public let scrollView = UIScrollView()
     private let indicatorView = UIView()
     private var titleButtons: [UIButton] = []
     private var initSelectedIndex: Int?
@@ -51,7 +51,7 @@ public class SegementSlideSwitcherView: UIView {
         setup()
     }
     
-    private func setup() {
+    open func setup() {
         addSubview(scrollView)
         if #available(iOS 11.0, *) {
             scrollView.contentInsetAdjustmentBehavior = .never
@@ -215,12 +215,25 @@ extension SegementSlideSwitcherView {
         let titleButton = titleButtons[index]
         titleButton.setTitleColor(innerConfig.selectedTitleColor, for: .normal)
         titleButton.titleLabel?.font = innerConfig.selectedTitleFont
+        
+        let indicatorViewX = titleButton.frame.origin.x +
+            (titleButton.bounds.width-innerConfig.indicatorWidth) / 2
+        
+        let indicatorViewY = scrollView.frame.height -
+            innerConfig.indicatorHeight -
+            innerConfig.indicatorBottomMargin
+        
+        let indicatorViewFrame = CGRect(x: indicatorViewX,
+                                        y: indicatorViewY,
+                                        width: innerConfig.indicatorWidth,
+                                        height: innerConfig.indicatorHeight)
+        
         if animated, indicatorView.frame != .zero {
             UIView.animate(withDuration: 0.25) {
-                self.indicatorView.frame = CGRect(x: titleButton.frame.origin.x+(titleButton.bounds.width-self.innerConfig.indicatorWidth)/2, y: self.frame.height-self.innerConfig.indicatorHeight, width: self.innerConfig.indicatorWidth, height: self.innerConfig.indicatorHeight)
+                self.indicatorView.frame = indicatorViewFrame
             }
         } else {
-            indicatorView.frame = CGRect(x: titleButton.frame.origin.x+(titleButton.bounds.width-innerConfig.indicatorWidth)/2, y: frame.height-innerConfig.indicatorHeight, width: innerConfig.indicatorWidth, height: innerConfig.indicatorHeight)
+            indicatorView.frame = indicatorViewFrame
         }
         if case .segement = innerConfig.type {
             var offsetX = titleButton.frame.origin.x-(scrollView.bounds.width-titleButton.bounds.width)/2

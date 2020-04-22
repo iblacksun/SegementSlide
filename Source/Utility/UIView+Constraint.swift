@@ -16,7 +16,7 @@ private var heightConstraintKey: Void?
 
 internal extension UIView {
     
-    var topConstraint: NSLayoutConstraint? {
+    public var topConstraint: NSLayoutConstraint? {
         get {
             if let value = objc_getAssociatedObject(self, &topConstraintKey) as? NSLayoutConstraint {
                 return value

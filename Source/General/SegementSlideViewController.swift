@@ -39,7 +39,7 @@ open class SegementSlideViewController: UIViewController {
     public var slideContentView: UIView {
         return segementSlideContentView
     }
-    public var headerStickyHeight: CGFloat {
+    open var headerStickyHeight: CGFloat {
         let headerHeight = segementSlideHeaderView.frame.height.rounded(.up)
         if edgesForExtendedLayout.contains(.top) {
             return headerHeight - topLayoutLength
@@ -71,6 +71,9 @@ open class SegementSlideViewController: UIViewController {
         } else {
             return nil
         }
+    }
+    open func createSwicherView() -> SegementSlideSwitcherView {
+        return SegementSlideSwitcherView()
     }
     
     open var switcherHeight: CGFloat {

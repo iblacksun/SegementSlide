@@ -11,7 +11,6 @@ import UIKit
 public struct SegementSlideSwitcherConfig {
     
     public static let shared = SegementSlideSwitcherConfig()
-    
     public var type: SwitcherType
     public var horizontalMargin: CGFloat
     public var horizontalSpace: CGFloat
@@ -21,6 +20,7 @@ public struct SegementSlideSwitcherConfig {
     public var selectedTitleColor: UIColor
     public var indicatorWidth: CGFloat
     public var indicatorHeight: CGFloat
+    public var indicatorBottomMargin: CGFloat = 0
     public var indicatorColor: UIColor
     public var badgeHeightForPointType: CGFloat
     public var badgeHeightForCountType: CGFloat

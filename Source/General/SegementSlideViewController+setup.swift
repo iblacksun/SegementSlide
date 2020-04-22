@@ -25,7 +25,7 @@ extension SegementSlideViewController {
     
     private func setupSegementSlideViews() {
         segementSlideHeaderView = SegementSlideHeaderView()
-        segementSlideSwitcherView = SegementSlideSwitcherView()
+        segementSlideSwitcherView = createSwicherView()
         segementSlideContentView = SegementSlideContentView()
         var gestureRecognizers: [UIGestureRecognizer] = []
         if let gestureRecognizersInScrollView = segementSlideSwitcherView.gestureRecognizersInScrollView {
