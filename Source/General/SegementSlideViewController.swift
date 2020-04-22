@@ -21,7 +21,7 @@ open class SegementSlideViewController: UIViewController {
     internal var segementSlideSwitcherView: SegementSlideSwitcherView!
     internal var innerHeaderView: UIView?
     
-    internal var safeAreaTopConstraint: NSLayoutConstraint?
+    public var safeAreaTopConstraint: NSLayoutConstraint?
     internal var parentKeyValueObservation: NSKeyValueObservation?
     internal var childKeyValueObservation: NSKeyValueObservation?
     internal var innerBouncesType: BouncesType = .parent
