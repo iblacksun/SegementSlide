@@ -33,6 +33,9 @@ open class SegementSlideViewController: UIViewController {
     public var slideScrollView: UIScrollView {
         return segementSlideScrollView
     }
+    public var slideHeaderView: UIView {
+        return segementSlideHeaderView
+    }
     public var slideSwitcherView: UIView {
         return segementSlideSwitcherView
     }

@@ -101,7 +101,7 @@ internal extension UIView {
         }
     }
     
-    var heightConstraint: NSLayoutConstraint? {
+    public var heightConstraint: NSLayoutConstraint? {
         get {
             if let value = objc_getAssociatedObject(self, &heightConstraintKey) as? NSLayoutConstraint {
                 return value

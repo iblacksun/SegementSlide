@@ -155,11 +155,11 @@ extension SegementSlideViewController {
         }
         if segementSlideSwitcherView.heightConstraint == nil {
             segementSlideSwitcherView.heightConstraint = segementSlideSwitcherView.heightAnchor.constraint(equalToConstant: switcherHeight)
-        } else {
+        }/* else {
             if segementSlideSwitcherView.heightConstraint?.constant != switcherHeight {
                 segementSlideSwitcherView.heightConstraint?.constant = switcherHeight
             }
-        }
+        }*/
         
         segementSlideContentView.translatesAutoresizingMaskIntoConstraints = false
         if segementSlideContentView.topConstraint == nil {
