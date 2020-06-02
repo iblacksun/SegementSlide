@@ -139,10 +139,11 @@ open class SegementSlideSwitcherView: UIView {
                 titleButton.badge.font = innerConfig.badgeFontForCountType
                 titleButton.badge.height = innerConfig.badgeHeightForCountType
                 titleButton.badge.offset = CGPoint(x: width/2+titleButton.badge.height/2, y: -height/2)
-            case .custom(_, _, _, let yOffset):
-                let y = yOffset ?? -height/2
+            case .custom(_, _, _, let xOffset, let yOffset):
+                let y = yOffset ?? -height / 2
+                let x = width / 2 + titleButton.badge.height / 2 + (xOffset ?? 0)
                 titleButton.badge.height = innerConfig.badgeHeightForCustomType
-                titleButton.badge.offset = CGPoint(x: width/2+titleButton.badge.height/2, y: y)
+                titleButton.badge.offset = CGPoint(x: x , y: y)
             }
         }
     }

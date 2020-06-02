@@ -20,7 +20,7 @@ public enum BadgeType {
     /// - cornerRadius:
     /// Use half the value of the `height` parameter in `Badge`, if the `cornerRadius` variable is nil
     case custom(_ attributedString: NSAttributedString, _ height: CGFloat?,
-        _ cornerRadius: CGFloat?, _ yOffset: CGFloat?)
+        _ cornerRadius: CGFloat?, _ xOffset: CGFloat?, _ yOffset: CGFloat?)
 }
 
 private final class BadgeView: UILabel {
@@ -123,7 +123,7 @@ public final class Badge {
                 }
                 badgeView.attributedText = nil
                 badgeView.text = string
-            case let .custom(attributedString, height, _, _):
+            case let .custom(attributedString, height, _,_,_):
                 badgeView.isHidden = false
                 badgeView.backgroundColor = .clear
                 badgeView.numberOfLines = 0
@@ -226,7 +226,7 @@ public final class Badge {
             break
         case .point, .count:
             badgeView.layer.cornerRadius = height/2
-        case let .custom(_, _, cornerRadius, _):
+        case let .custom(_, _, cornerRadius, _, _):
             if let cornerRadius = cornerRadius {
                 badgeView.layer.cornerRadius = cornerRadius
             } else {
