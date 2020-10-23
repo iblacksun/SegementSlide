@@ -42,6 +42,9 @@ open class SegementSlideViewController: UIViewController {
     public var slideContentView: UIView {
         return segementSlideContentView
     }
+    public var slideContentScrollView: UIScrollView {
+        return segementSlideContentView.scrollView
+    }
     open var headerStickyHeight: CGFloat {
         let headerHeight = segementSlideHeaderView.frame.height.rounded(.up)
         if edgesForExtendedLayout.contains(.top) {

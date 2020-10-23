@@ -24,7 +24,7 @@ public protocol SegementSlideContentDelegate: class {
 public class SegementSlideContentView: UIView {
     internal static let willClearAllReusableViewControllersNotification: NSNotification.Name = NSNotification.Name(rawValue: "willClearAllReusableViewControllersNotification")
     
-    private let scrollView = UIScrollView()
+    public let scrollView = UIScrollView()
     private var viewControllers: [Int: SegementSlideContentScrollViewDelegate] = [:]
     private var initSelectedIndex: Int?
     internal var gestureRecognizersInScrollView: [UIGestureRecognizer]? {
