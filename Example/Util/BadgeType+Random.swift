@@ -30,7 +30,7 @@ extension BadgeType: CaseIterable {
     private static var imageHotMark: BadgeType {
         let hotImageAttachment = NSTextAttachment()
         hotImageAttachment.image = UIImage(named: "mark_hot_red")
-        return .custom(NSAttributedString(attachment: hotImageAttachment), nil, nil)
+        return .custom(NSAttributedString(attachment: hotImageAttachment), nil, nil, nil, nil)
     }
     
     private static var richTextHotMark: BadgeType {
@@ -62,8 +62,7 @@ extension BadgeType: CaseIterable {
         attributedString.append(spaceString)
         
         attributedString.addAttributes([NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.backgroundColor: UIColor.red], range: NSRange(location: 0, length: attributedString.length))
-        
-        return .custom(attributedString, height, nil)
+        return .custom(attributedString, height, nil, nil, nil)
     }
     
     private static var richTextNewMark: BadgeType {
@@ -88,8 +87,7 @@ extension BadgeType: CaseIterable {
         attributedString.append(spaceString)
         
         attributedString.addAttributes([NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.backgroundColor: UIColor.red], range: NSRange(location: 0, length: attributedString.length))
-        
-        return .custom(attributedString, height, nil)
+        return .custom(attributedString, height, nil, nil, nil)
     }
     
 }
