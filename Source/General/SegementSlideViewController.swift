@@ -57,7 +57,7 @@ open class SegementSlideViewController: UIViewController {
         return view.bounds.height-topLayoutLength-switcherHeight
     }
     public var currentIndex: Int? {
-        return segementSlideSwitcherView.selectedIndex
+        return segementSlideSwitcherView?.selectedIndex
     }
     public var currentSegementSlideContentViewController: SegementSlideContentScrollViewDelegate? {
         guard let currentIndex = currentIndex else { return nil }
