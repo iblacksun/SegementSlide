@@ -25,7 +25,7 @@ public enum BadgeType {
 
 private final class BadgeView: UILabel {
     
-    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+    fileprivate override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
         if let superview = superview {
             return superview
         } else {
@@ -37,7 +37,7 @@ private final class BadgeView: UILabel {
 
 private var badgeKey: Void?
 
-public extension UIView {
+internal extension UIView {
     
     var badge: Badge {
         get {
@@ -54,7 +54,7 @@ public extension UIView {
     
 }
 
-public final class Badge {
+internal final class Badge {
     
     private let badgeView: BadgeView
     
@@ -77,7 +77,7 @@ public final class Badge {
     }
     
     /// font for the `.count` type
-    public var font: UIFont = UIFont.systemFont(ofSize: 10, weight: .regular) {
+    internal var font: UIFont = UIFont.systemFont(ofSize: 10, weight: .regular) {
         didSet {
             if case .count = type {
                 badgeView.font = font
@@ -86,7 +86,7 @@ public final class Badge {
     }
     
     /// Badge's height, Badge's cornerRadius is half of the value
-    public var height: CGFloat = 9 {
+    internal var height: CGFloat = 9 {
         didSet {
             updateHeight()
         }
@@ -95,14 +95,14 @@ public final class Badge {
     /// Badge's center position relative to the parent view's center position displacement
     /// A positive x means moving to the right
     /// A positive y means moving to the bottom
-    public var offset: CGPoint = .zero {
+    internal var offset: CGPoint = .zero {
         didSet {
             remakeConstraints()
         }
     }
     
     /// the type of `Badge`
-    public var type: BadgeType = .none {
+    internal var type: BadgeType = .none {
         didSet {
             switch type {
             case .none, .point:

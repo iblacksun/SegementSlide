@@ -9,9 +9,9 @@
 import UIKit
 import SegementSlide
 
-class BaseSegementSlideViewController: SegementSlideViewController {
+class BaseSegementSlideDefaultViewController: SegementSlideDefaultViewController {
     
-    override var switcherConfig: SegementSlideSwitcherConfig {
+    override var switcherConfig: SegementSlideDefaultSwitcherConfig {
         return ConfigManager.shared.switcherConfig
     }
     
@@ -23,11 +23,11 @@ class BaseSegementSlideViewController: SegementSlideViewController {
     
     private func updateNavigationBarStyle(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.y > headerStickyHeight {
-            slideSwitcherView.layer.applySketchShadow(color: .black, alpha: 0.03, x: 0, y: 2.5, blur: 5)
-            slideSwitcherView.layer.add(generateFadeAnimation(), forKey: "reloadSwitcherView")
+            switcherView.layer.applySketchShadow(color: .black, alpha: 0.03, x: 0, y: 2.5, blur: 5)
+            switcherView.layer.add(generateFadeAnimation(), forKey: "reloadSwitcherView")
         } else {
-            slideSwitcherView.layer.applySketchShadow(color: .clear, alpha: 0, x: 0, y: 0, blur: 0)
-            slideSwitcherView.layer.add(generateFadeAnimation(), forKey: "reloadSwitcherView")
+            switcherView.layer.applySketchShadow(color: .clear, alpha: 0, x: 0, y: 0, blur: 0)
+            switcherView.layer.add(generateFadeAnimation(), forKey: "reloadSwitcherView")
         }
     }
     
@@ -65,7 +65,8 @@ class BaseSegementSlideViewController: SegementSlideViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "more", style: .plain, target: self, action: #selector(moreAction))
     }
     
-    @objc private func moreAction() {
+    @objc
+    private func moreAction() {
         let viewController: UIViewController
         switch Int.random(in: 0..<8) {
         case 0..<4:

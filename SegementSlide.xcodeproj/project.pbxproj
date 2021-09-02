@@ -7,47 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		80271D3E21EF5D92003C8EE9 /* SegementSlideViewController+scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80271D3A21EF5D92003C8EE9 /* SegementSlideViewController+scroll.swift */; };
-		80271D3F21EF5D92003C8EE9 /* SegementSlideViewController+scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80271D3A21EF5D92003C8EE9 /* SegementSlideViewController+scroll.swift */; };
-		80271D4021EF5D92003C8EE9 /* SegementSlideViewController+delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80271D3B21EF5D92003C8EE9 /* SegementSlideViewController+delegate.swift */; };
-		80271D4121EF5D92003C8EE9 /* SegementSlideViewController+delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80271D3B21EF5D92003C8EE9 /* SegementSlideViewController+delegate.swift */; };
-		80271D4221EF5D92003C8EE9 /* SegementSlideViewController+ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80271D3C21EF5D92003C8EE9 /* SegementSlideViewController+ex.swift */; };
-		80271D4321EF5D92003C8EE9 /* SegementSlideViewController+ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80271D3C21EF5D92003C8EE9 /* SegementSlideViewController+ex.swift */; };
-		80271D4421EF5D92003C8EE9 /* SegementSlideViewController+setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80271D3D21EF5D92003C8EE9 /* SegementSlideViewController+setup.swift */; };
-		80271D4521EF5D92003C8EE9 /* SegementSlideViewController+setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80271D3D21EF5D92003C8EE9 /* SegementSlideViewController+setup.swift */; };
-		80271D4721EF5DBB003C8EE9 /* SegementSlideScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80271D4621EF5DBA003C8EE9 /* SegementSlideScrollView.swift */; };
-		80271D4821EF5DBB003C8EE9 /* SegementSlideScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80271D4621EF5DBA003C8EE9 /* SegementSlideScrollView.swift */; };
-		80271D4B21EF610A003C8EE9 /* SegementSlideSwitcherConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80271D4A21EF610A003C8EE9 /* SegementSlideSwitcherConfig.swift */; };
-		80271D4C21EF610A003C8EE9 /* SegementSlideSwitcherConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80271D4A21EF610A003C8EE9 /* SegementSlideSwitcherConfig.swift */; };
-		80A8699121E6242700A773CB /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8698021E6242600A773CB /* BadgeView.swift */; };
-		80A8699521E6242700A773CB /* String+Bounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8698421E6242600A773CB /* String+Bounding.swift */; };
-		80A8699821E6242700A773CB /* SegementSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8698921E6242600A773CB /* SegementSlideViewController.swift */; };
-		80A8699B21E6242700A773CB /* TransparentSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8698E21E6242600A773CB /* TransparentSlideViewController.swift */; };
-		80A869AA21E6252800A773CB /* TransparentSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8698E21E6242600A773CB /* TransparentSlideViewController.swift */; };
-		80A869AB21E6252800A773CB /* SegementSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8698921E6242600A773CB /* SegementSlideViewController.swift */; };
-		80A869B121E6252800A773CB /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8698021E6242600A773CB /* BadgeView.swift */; };
-		80A869B521E6252800A773CB /* String+Bounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8698421E6242600A773CB /* String+Bounding.swift */; };
+		801C121B250621510018BD64 /* SegementSlideSwitcherDataSourceWeakBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF00250099AC0043F71B /* SegementSlideSwitcherDataSourceWeakBox.swift */; };
+		801C121C250621520018BD64 /* SegementSlideSwitcherDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF01250099AC0043F71B /* SegementSlideSwitcherDelegate.swift */; };
+		801C121D250621520018BD64 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF02250099AC0043F71B /* BadgeView.swift */; };
+		801C121E250621520018BD64 /* SegementSlideDefaultSwitcherConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF03250099AC0043F71B /* SegementSlideDefaultSwitcherConfig.swift */; };
+		801C121F250621520018BD64 /* SegementSlideDefaultSwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF04250099AC0043F71B /* SegementSlideDefaultSwitcherView.swift */; };
+		801C1220250621520018BD64 /* SegementSlideDefaultSwitcherView+ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF05250099AC0043F71B /* SegementSlideDefaultSwitcherView+ex.swift */; };
+		801C1221250621520018BD64 /* TransparentSlideDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF07250099AC0043F71B /* TransparentSlideDefaultViewController.swift */; };
+		801C1222250621520018BD64 /* SegementSlideViewController+setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF08250099AC0043F71B /* SegementSlideViewController+setup.swift */; };
+		801C1223250621520018BD64 /* SegementSlideViewController+scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF09250099AC0043F71B /* SegementSlideViewController+scroll.swift */; };
+		801C1224250621520018BD64 /* SegementSlideScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF0A250099AC0043F71B /* SegementSlideScrollView.swift */; };
+		801C1225250621520018BD64 /* SegementSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF0B250099AC0043F71B /* SegementSlideViewController.swift */; };
+		801C1226250621520018BD64 /* SegementSlideViewController+delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF0C250099AC0043F71B /* SegementSlideViewController+delegate.swift */; };
+		801C1227250621520018BD64 /* SegementSlideDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF0D250099AC0043F71B /* SegementSlideDefaultViewController.swift */; };
+		801C1228250621520018BD64 /* TransparentSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF0E250099AC0043F71B /* TransparentSlideViewController.swift */; };
+		801C1229250621520018BD64 /* SegementSlideViewController+ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF0F250099AC0043F71B /* SegementSlideViewController+ex.swift */; };
+		801C122A250621520018BD64 /* SegementSlideContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF11250099AC0043F71B /* SegementSlideContentView.swift */; };
+		801C122B250621520018BD64 /* SegementSlideHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF13250099AC0043F71B /* SegementSlideHeaderView.swift */; };
+		801C122C250621520018BD64 /* UIView+Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF15250099AC0043F71B /* UIView+Constraint.swift */; };
+		801C122D250621520018BD64 /* String+Bounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF16250099AC0043F71B /* String+Bounding.swift */; };
+		801C122E250621B70018BD64 /* SegementSlide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80A869A221E624E800A773CB /* SegementSlide.framework */; };
+		8031BF17250099AC0043F71B /* SegementSlideSwitcherDataSourceWeakBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF00250099AC0043F71B /* SegementSlideSwitcherDataSourceWeakBox.swift */; };
+		8031BF18250099AC0043F71B /* SegementSlideSwitcherDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF01250099AC0043F71B /* SegementSlideSwitcherDelegate.swift */; };
+		8031BF19250099AC0043F71B /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF02250099AC0043F71B /* BadgeView.swift */; };
+		8031BF1A250099AC0043F71B /* SegementSlideDefaultSwitcherConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF03250099AC0043F71B /* SegementSlideDefaultSwitcherConfig.swift */; };
+		8031BF1B250099AC0043F71B /* SegementSlideDefaultSwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF04250099AC0043F71B /* SegementSlideDefaultSwitcherView.swift */; };
+		8031BF1C250099AC0043F71B /* SegementSlideDefaultSwitcherView+ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF05250099AC0043F71B /* SegementSlideDefaultSwitcherView+ex.swift */; };
+		8031BF1D250099AC0043F71B /* TransparentSlideDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF07250099AC0043F71B /* TransparentSlideDefaultViewController.swift */; };
+		8031BF1E250099AC0043F71B /* SegementSlideViewController+setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF08250099AC0043F71B /* SegementSlideViewController+setup.swift */; };
+		8031BF1F250099AC0043F71B /* SegementSlideViewController+scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF09250099AC0043F71B /* SegementSlideViewController+scroll.swift */; };
+		8031BF20250099AC0043F71B /* SegementSlideScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF0A250099AC0043F71B /* SegementSlideScrollView.swift */; };
+		8031BF21250099AC0043F71B /* SegementSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF0B250099AC0043F71B /* SegementSlideViewController.swift */; };
+		8031BF22250099AC0043F71B /* SegementSlideViewController+delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF0C250099AC0043F71B /* SegementSlideViewController+delegate.swift */; };
+		8031BF23250099AC0043F71B /* SegementSlideDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF0D250099AC0043F71B /* SegementSlideDefaultViewController.swift */; };
+		8031BF24250099AC0043F71B /* TransparentSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF0E250099AC0043F71B /* TransparentSlideViewController.swift */; };
+		8031BF25250099AC0043F71B /* SegementSlideViewController+ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF0F250099AC0043F71B /* SegementSlideViewController+ex.swift */; };
+		8031BF26250099AC0043F71B /* SegementSlideContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF11250099AC0043F71B /* SegementSlideContentView.swift */; };
+		8031BF27250099AC0043F71B /* SegementSlideHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF13250099AC0043F71B /* SegementSlideHeaderView.swift */; };
+		8031BF28250099AC0043F71B /* UIView+Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF15250099AC0043F71B /* UIView+Constraint.swift */; };
+		8031BF29250099AC0043F71B /* String+Bounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8031BF16250099AC0043F71B /* String+Bounding.swift */; };
 		80A869C821E6387600A773CB /* SegementSlide_Dynamic_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A869C721E6387600A773CB /* SegementSlide_Dynamic_Tests.swift */; };
-		80A869CA21E6387600A773CB /* SegementSlide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80A869A221E624E800A773CB /* SegementSlide.framework */; };
-		80E05EF821E8DE7F00C42A35 /* SegementSlideHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E05EF721E8DE7F00C42A35 /* SegementSlideHeaderView.swift */; };
-		80E05EFA21E8DE8E00C42A35 /* SegementSlideSwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E05EF921E8DE8E00C42A35 /* SegementSlideSwitcherView.swift */; };
-		80E05EFC21E8DE9600C42A35 /* SegementSlideContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E05EFB21E8DE9600C42A35 /* SegementSlideContentView.swift */; };
-		80E05EFD21E8DEAC00C42A35 /* SegementSlideContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E05EFB21E8DE9600C42A35 /* SegementSlideContentView.swift */; };
-		80E05EFE21E8DEAE00C42A35 /* SegementSlideSwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E05EF921E8DE8E00C42A35 /* SegementSlideSwitcherView.swift */; };
-		80E05EFF21E8DEB000C42A35 /* SegementSlideHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E05EF721E8DE7F00C42A35 /* SegementSlideHeaderView.swift */; };
-		80FD6F2F22001CC800F42780 /* UIView+Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FD6F2E22001CC800F42780 /* UIView+Constraint.swift */; };
-		80FD6F3022001CC800F42780 /* UIView+Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FD6F2E22001CC800F42780 /* UIView+Constraint.swift */; };
+		80C66AF4250E7E200084692E /* UIScrollView+Scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C66AF3250E7E200084692E /* UIScrollView+Scroll.swift */; };
+		80C66AF5250E7E430084692E /* UIScrollView+Scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C66AF3250E7E200084692E /* UIScrollView+Scroll.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		80A869CB21E6387600A773CB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8066125221BA910000C05D7E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 80A869A121E624E800A773CB;
-			remoteInfo = "SegementSlide-Dynamic";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		8066125821BA910000C05D7E /* CopyFiles */ = {
@@ -62,27 +64,33 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		80271D3A21EF5D92003C8EE9 /* SegementSlideViewController+scroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SegementSlideViewController+scroll.swift"; sourceTree = "<group>"; };
-		80271D3B21EF5D92003C8EE9 /* SegementSlideViewController+delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SegementSlideViewController+delegate.swift"; sourceTree = "<group>"; };
-		80271D3C21EF5D92003C8EE9 /* SegementSlideViewController+ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SegementSlideViewController+ex.swift"; sourceTree = "<group>"; };
-		80271D3D21EF5D92003C8EE9 /* SegementSlideViewController+setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SegementSlideViewController+setup.swift"; sourceTree = "<group>"; };
-		80271D4621EF5DBA003C8EE9 /* SegementSlideScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegementSlideScrollView.swift; sourceTree = "<group>"; };
-		80271D4A21EF610A003C8EE9 /* SegementSlideSwitcherConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegementSlideSwitcherConfig.swift; sourceTree = "<group>"; };
+		8031BF00250099AC0043F71B /* SegementSlideSwitcherDataSourceWeakBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegementSlideSwitcherDataSourceWeakBox.swift; sourceTree = "<group>"; };
+		8031BF01250099AC0043F71B /* SegementSlideSwitcherDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegementSlideSwitcherDelegate.swift; sourceTree = "<group>"; };
+		8031BF02250099AC0043F71B /* BadgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
+		8031BF03250099AC0043F71B /* SegementSlideDefaultSwitcherConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegementSlideDefaultSwitcherConfig.swift; sourceTree = "<group>"; };
+		8031BF04250099AC0043F71B /* SegementSlideDefaultSwitcherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegementSlideDefaultSwitcherView.swift; sourceTree = "<group>"; };
+		8031BF05250099AC0043F71B /* SegementSlideDefaultSwitcherView+ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SegementSlideDefaultSwitcherView+ex.swift"; sourceTree = "<group>"; };
+		8031BF07250099AC0043F71B /* TransparentSlideDefaultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentSlideDefaultViewController.swift; sourceTree = "<group>"; };
+		8031BF08250099AC0043F71B /* SegementSlideViewController+setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SegementSlideViewController+setup.swift"; sourceTree = "<group>"; };
+		8031BF09250099AC0043F71B /* SegementSlideViewController+scroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SegementSlideViewController+scroll.swift"; sourceTree = "<group>"; };
+		8031BF0A250099AC0043F71B /* SegementSlideScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegementSlideScrollView.swift; sourceTree = "<group>"; };
+		8031BF0B250099AC0043F71B /* SegementSlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegementSlideViewController.swift; sourceTree = "<group>"; };
+		8031BF0C250099AC0043F71B /* SegementSlideViewController+delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SegementSlideViewController+delegate.swift"; sourceTree = "<group>"; };
+		8031BF0D250099AC0043F71B /* SegementSlideDefaultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegementSlideDefaultViewController.swift; sourceTree = "<group>"; };
+		8031BF0E250099AC0043F71B /* TransparentSlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentSlideViewController.swift; sourceTree = "<group>"; };
+		8031BF0F250099AC0043F71B /* SegementSlideViewController+ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SegementSlideViewController+ex.swift"; sourceTree = "<group>"; };
+		8031BF11250099AC0043F71B /* SegementSlideContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegementSlideContentView.swift; sourceTree = "<group>"; };
+		8031BF13250099AC0043F71B /* SegementSlideHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegementSlideHeaderView.swift; sourceTree = "<group>"; };
+		8031BF15250099AC0043F71B /* UIView+Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraint.swift"; sourceTree = "<group>"; };
+		8031BF16250099AC0043F71B /* String+Bounding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Bounding.swift"; sourceTree = "<group>"; };
 		8066125A21BA910000C05D7E /* libSegementSlide.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSegementSlide.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		80A8698021E6242600A773CB /* BadgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
-		80A8698421E6242600A773CB /* String+Bounding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Bounding.swift"; sourceTree = "<group>"; };
-		80A8698921E6242600A773CB /* SegementSlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegementSlideViewController.swift; sourceTree = "<group>"; };
-		80A8698E21E6242600A773CB /* TransparentSlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentSlideViewController.swift; sourceTree = "<group>"; };
 		80A869A221E624E800A773CB /* SegementSlide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SegementSlide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A869B821E627BE00A773CB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80A869BD21E6294E00A773CB /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		80A869C521E6387500A773CB /* SegementSlide-Dynamic-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SegementSlide-Dynamic-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A869C721E6387600A773CB /* SegementSlide_Dynamic_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegementSlide_Dynamic_Tests.swift; sourceTree = "<group>"; };
 		80A869C921E6387600A773CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80E05EF721E8DE7F00C42A35 /* SegementSlideHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegementSlideHeaderView.swift; sourceTree = "<group>"; };
-		80E05EF921E8DE8E00C42A35 /* SegementSlideSwitcherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegementSlideSwitcherView.swift; sourceTree = "<group>"; };
-		80E05EFB21E8DE9600C42A35 /* SegementSlideContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegementSlideContentView.swift; sourceTree = "<group>"; };
-		80FD6F2E22001CC800F42780 /* UIView+Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraint.swift"; sourceTree = "<group>"; };
+		80C66AF3250E7E200084692E /* UIScrollView+Scroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Scroll.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,32 +112,85 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80A869CA21E6387600A773CB /* SegementSlide.framework in Frameworks */,
+				801C122E250621B70018BD64 /* SegementSlide.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		80271D4921EF5E80003C8EE9 /* General */ = {
+		8031BEFE250099AC0043F71B /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				80A8698E21E6242600A773CB /* TransparentSlideViewController.swift */,
-				80A8698921E6242600A773CB /* SegementSlideViewController.swift */,
-				80271D3D21EF5D92003C8EE9 /* SegementSlideViewController+setup.swift */,
-				80271D3B21EF5D92003C8EE9 /* SegementSlideViewController+delegate.swift */,
-				80271D3A21EF5D92003C8EE9 /* SegementSlideViewController+scroll.swift */,
-				80271D3C21EF5D92003C8EE9 /* SegementSlideViewController+ex.swift */,
-				80271D4621EF5DBA003C8EE9 /* SegementSlideScrollView.swift */,
+				8031BEFF250099AC0043F71B /* Switcher */,
+				8031BF06250099AC0043F71B /* General */,
+				8031BF10250099AC0043F71B /* Content */,
+				8031BF12250099AC0043F71B /* Header */,
+				8031BF14250099AC0043F71B /* Utility */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		8031BEFF250099AC0043F71B /* Switcher */ = {
+			isa = PBXGroup;
+			children = (
+				8031BF00250099AC0043F71B /* SegementSlideSwitcherDataSourceWeakBox.swift */,
+				8031BF01250099AC0043F71B /* SegementSlideSwitcherDelegate.swift */,
+				8031BF02250099AC0043F71B /* BadgeView.swift */,
+				8031BF03250099AC0043F71B /* SegementSlideDefaultSwitcherConfig.swift */,
+				8031BF04250099AC0043F71B /* SegementSlideDefaultSwitcherView.swift */,
+				8031BF05250099AC0043F71B /* SegementSlideDefaultSwitcherView+ex.swift */,
+			);
+			path = Switcher;
+			sourceTree = "<group>";
+		};
+		8031BF06250099AC0043F71B /* General */ = {
+			isa = PBXGroup;
+			children = (
+				8031BF07250099AC0043F71B /* TransparentSlideDefaultViewController.swift */,
+				8031BF08250099AC0043F71B /* SegementSlideViewController+setup.swift */,
+				8031BF09250099AC0043F71B /* SegementSlideViewController+scroll.swift */,
+				8031BF0A250099AC0043F71B /* SegementSlideScrollView.swift */,
+				8031BF0B250099AC0043F71B /* SegementSlideViewController.swift */,
+				8031BF0C250099AC0043F71B /* SegementSlideViewController+delegate.swift */,
+				8031BF0D250099AC0043F71B /* SegementSlideDefaultViewController.swift */,
+				8031BF0E250099AC0043F71B /* TransparentSlideViewController.swift */,
+				8031BF0F250099AC0043F71B /* SegementSlideViewController+ex.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		8031BF10250099AC0043F71B /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				8031BF11250099AC0043F71B /* SegementSlideContentView.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		8031BF12250099AC0043F71B /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				8031BF13250099AC0043F71B /* SegementSlideHeaderView.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		8031BF14250099AC0043F71B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8031BF16250099AC0043F71B /* String+Bounding.swift */,
+				8031BF15250099AC0043F71B /* UIView+Constraint.swift */,
+				80C66AF3250E7E200084692E /* UIScrollView+Scroll.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		8066125121BA910000C05D7E = {
 			isa = PBXGroup;
 			children = (
 				80A869B721E627BE00A773CB /* SegementSlide */,
-				80A8697E21E6242600A773CB /* Source */,
+				8031BEFE250099AC0043F71B /* Source */,
 				80A869C621E6387600A773CB /* SegementSlide-Dynamic-Tests */,
 				8066125B21BA910000C05D7E /* Products */,
 				80A869BC21E6294D00A773CB /* Frameworks */,
@@ -144,61 +205,6 @@
 				80A869C521E6387500A773CB /* SegementSlide-Dynamic-Tests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8099833D2249322C00C36D4B /* Badge */ = {
-			isa = PBXGroup;
-			children = (
-				80A8698021E6242600A773CB /* BadgeView.swift */,
-			);
-			path = Badge;
-			sourceTree = "<group>";
-		};
-		80A8697E21E6242600A773CB /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				80271D4921EF5E80003C8EE9 /* General */,
-				80A8698F21E6242600A773CB /* Header */,
-				8099833D2249322C00C36D4B /* Badge */,
-				80A8698A21E6242600A773CB /* Segement */,
-				80A8698521E6242600A773CB /* Content */,
-				80A8697F21E6242600A773CB /* Utility */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		80A8697F21E6242600A773CB /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				80A8698421E6242600A773CB /* String+Bounding.swift */,
-				80FD6F2E22001CC800F42780 /* UIView+Constraint.swift */,
-			);
-			path = Utility;
-			sourceTree = "<group>";
-		};
-		80A8698521E6242600A773CB /* Content */ = {
-			isa = PBXGroup;
-			children = (
-				80E05EFB21E8DE9600C42A35 /* SegementSlideContentView.swift */,
-			);
-			path = Content;
-			sourceTree = "<group>";
-		};
-		80A8698A21E6242600A773CB /* Segement */ = {
-			isa = PBXGroup;
-			children = (
-				80E05EF921E8DE8E00C42A35 /* SegementSlideSwitcherView.swift */,
-				80271D4A21EF610A003C8EE9 /* SegementSlideSwitcherConfig.swift */,
-			);
-			path = Segement;
-			sourceTree = "<group>";
-		};
-		80A8698F21E6242600A773CB /* Header */ = {
-			isa = PBXGroup;
-			children = (
-				80E05EF721E8DE7F00C42A35 /* SegementSlideHeaderView.swift */,
-			);
-			path = Header;
 			sourceTree = "<group>";
 		};
 		80A869B721E627BE00A773CB /* SegementSlide */ = {
@@ -285,7 +291,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				80A869CC21E6387600A773CB /* PBXTargetDependency */,
 			);
 			name = "SegementSlide-Dynamic-Tests";
 			productName = "SegementSlide-Dynamic-Tests";
@@ -356,20 +361,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80E05EFA21E8DE8E00C42A35 /* SegementSlideSwitcherView.swift in Sources */,
-				80FD6F2F22001CC800F42780 /* UIView+Constraint.swift in Sources */,
-				80E05EF821E8DE7F00C42A35 /* SegementSlideHeaderView.swift in Sources */,
-				80A8699B21E6242700A773CB /* TransparentSlideViewController.swift in Sources */,
-				80271D4721EF5DBB003C8EE9 /* SegementSlideScrollView.swift in Sources */,
-				80271D4421EF5D92003C8EE9 /* SegementSlideViewController+setup.swift in Sources */,
-				80A8699121E6242700A773CB /* BadgeView.swift in Sources */,
-				80271D4021EF5D92003C8EE9 /* SegementSlideViewController+delegate.swift in Sources */,
-				80A8699821E6242700A773CB /* SegementSlideViewController.swift in Sources */,
-				80271D3E21EF5D92003C8EE9 /* SegementSlideViewController+scroll.swift in Sources */,
-				80271D4221EF5D92003C8EE9 /* SegementSlideViewController+ex.swift in Sources */,
-				80271D4B21EF610A003C8EE9 /* SegementSlideSwitcherConfig.swift in Sources */,
-				80E05EFC21E8DE9600C42A35 /* SegementSlideContentView.swift in Sources */,
-				80A8699521E6242700A773CB /* String+Bounding.swift in Sources */,
+				8031BF1C250099AC0043F71B /* SegementSlideDefaultSwitcherView+ex.swift in Sources */,
+				8031BF20250099AC0043F71B /* SegementSlideScrollView.swift in Sources */,
+				8031BF29250099AC0043F71B /* String+Bounding.swift in Sources */,
+				8031BF25250099AC0043F71B /* SegementSlideViewController+ex.swift in Sources */,
+				8031BF1A250099AC0043F71B /* SegementSlideDefaultSwitcherConfig.swift in Sources */,
+				8031BF27250099AC0043F71B /* SegementSlideHeaderView.swift in Sources */,
+				8031BF24250099AC0043F71B /* TransparentSlideViewController.swift in Sources */,
+				8031BF19250099AC0043F71B /* BadgeView.swift in Sources */,
+				8031BF17250099AC0043F71B /* SegementSlideSwitcherDataSourceWeakBox.swift in Sources */,
+				8031BF1F250099AC0043F71B /* SegementSlideViewController+scroll.swift in Sources */,
+				8031BF26250099AC0043F71B /* SegementSlideContentView.swift in Sources */,
+				8031BF1B250099AC0043F71B /* SegementSlideDefaultSwitcherView.swift in Sources */,
+				8031BF23250099AC0043F71B /* SegementSlideDefaultViewController.swift in Sources */,
+				8031BF22250099AC0043F71B /* SegementSlideViewController+delegate.swift in Sources */,
+				80C66AF4250E7E200084692E /* UIScrollView+Scroll.swift in Sources */,
+				8031BF18250099AC0043F71B /* SegementSlideSwitcherDelegate.swift in Sources */,
+				8031BF21250099AC0043F71B /* SegementSlideViewController.swift in Sources */,
+				8031BF28250099AC0043F71B /* UIView+Constraint.swift in Sources */,
+				8031BF1E250099AC0043F71B /* SegementSlideViewController+setup.swift in Sources */,
+				8031BF1D250099AC0043F71B /* TransparentSlideDefaultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,20 +388,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80A869B521E6252800A773CB /* String+Bounding.swift in Sources */,
-				80FD6F3022001CC800F42780 /* UIView+Constraint.swift in Sources */,
-				80E05EFE21E8DEAE00C42A35 /* SegementSlideSwitcherView.swift in Sources */,
-				80A869B121E6252800A773CB /* BadgeView.swift in Sources */,
-				80271D4821EF5DBB003C8EE9 /* SegementSlideScrollView.swift in Sources */,
-				80271D4521EF5D92003C8EE9 /* SegementSlideViewController+setup.swift in Sources */,
-				80A869AB21E6252800A773CB /* SegementSlideViewController.swift in Sources */,
-				80271D4121EF5D92003C8EE9 /* SegementSlideViewController+delegate.swift in Sources */,
-				80E05EFF21E8DEB000C42A35 /* SegementSlideHeaderView.swift in Sources */,
-				80271D3F21EF5D92003C8EE9 /* SegementSlideViewController+scroll.swift in Sources */,
-				80271D4321EF5D92003C8EE9 /* SegementSlideViewController+ex.swift in Sources */,
-				80271D4C21EF610A003C8EE9 /* SegementSlideSwitcherConfig.swift in Sources */,
-				80E05EFD21E8DEAC00C42A35 /* SegementSlideContentView.swift in Sources */,
-				80A869AA21E6252800A773CB /* TransparentSlideViewController.swift in Sources */,
+				801C121B250621510018BD64 /* SegementSlideSwitcherDataSourceWeakBox.swift in Sources */,
+				801C121C250621520018BD64 /* SegementSlideSwitcherDelegate.swift in Sources */,
+				801C121D250621520018BD64 /* BadgeView.swift in Sources */,
+				801C121E250621520018BD64 /* SegementSlideDefaultSwitcherConfig.swift in Sources */,
+				801C121F250621520018BD64 /* SegementSlideDefaultSwitcherView.swift in Sources */,
+				801C1220250621520018BD64 /* SegementSlideDefaultSwitcherView+ex.swift in Sources */,
+				801C1221250621520018BD64 /* TransparentSlideDefaultViewController.swift in Sources */,
+				801C1222250621520018BD64 /* SegementSlideViewController+setup.swift in Sources */,
+				801C1223250621520018BD64 /* SegementSlideViewController+scroll.swift in Sources */,
+				801C1224250621520018BD64 /* SegementSlideScrollView.swift in Sources */,
+				801C1225250621520018BD64 /* SegementSlideViewController.swift in Sources */,
+				801C1226250621520018BD64 /* SegementSlideViewController+delegate.swift in Sources */,
+				801C1227250621520018BD64 /* SegementSlideDefaultViewController.swift in Sources */,
+				801C1228250621520018BD64 /* TransparentSlideViewController.swift in Sources */,
+				80C66AF5250E7E430084692E /* UIScrollView+Scroll.swift in Sources */,
+				801C1229250621520018BD64 /* SegementSlideViewController+ex.swift in Sources */,
+				801C122A250621520018BD64 /* SegementSlideContentView.swift in Sources */,
+				801C122B250621520018BD64 /* SegementSlideHeaderView.swift in Sources */,
+				801C122C250621520018BD64 /* UIView+Constraint.swift in Sources */,
+				801C122D250621520018BD64 /* String+Bounding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,14 +420,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		80A869CC21E6387600A773CB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 80A869A121E624E800A773CB /* SegementSlide-Dynamic */;
-			targetProxy = 80A869CB21E6387600A773CB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8066125F21BA910000C05D7E /* Debug */ = {
@@ -536,6 +545,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -555,6 +565,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -578,10 +589,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/SegementSlide/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -590,9 +598,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 3.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = me.jiar.SegementSlide;
 				PRODUCT_NAME = SegementSlide;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -610,10 +620,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/SegementSlide/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -622,9 +629,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 3.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = me.jiar.SegementSlide;
 				PRODUCT_NAME = SegementSlide;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";

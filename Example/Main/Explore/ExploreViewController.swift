@@ -8,8 +8,9 @@
 
 import UIKit
 import SegementSlide
+import MJRefresh
 
-class ExploreViewController: BaseSegementSlideViewController {
+class ExploreViewController: BaseSegementSlideDefaultViewController {
 
     private var badges: [Int: BadgeType] = [:]
     
@@ -24,7 +25,7 @@ class ExploreViewController: BaseSegementSlideViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override var headerView: UIView? {
+    override func segementSlideHeaderView() -> UIView? {
         let headerView = UIImageView()
         headerView.isUserInteractionEnabled = true
         headerView.contentMode = .scaleAspectFill
@@ -34,7 +35,7 @@ class ExploreViewController: BaseSegementSlideViewController {
         return headerView
     }
     
-    override var switcherConfig: SegementSlideSwitcherConfig {
+    override var switcherConfig: SegementSlideDefaultSwitcherConfig {
         var config = super.switcherConfig
         config.type = .segement
         return config
@@ -55,19 +56,33 @@ class ExploreViewController: BaseSegementSlideViewController {
     }
     
     override func segementSlideContentViewController(at index: Int) -> SegementSlideContentScrollViewDelegate? {
-        let viewController = ContentViewController()
-        viewController.refreshHandler = { [weak self] in
-            guard let self = self else { return }
-            self.badges[index] = BadgeType.random
-            self.reloadBadgeInSwitcher()
-        }
-        return viewController
+        return ContentViewController()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let refreshHeader = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(refreshAction))
+        refreshHeader?.lastUpdatedTimeLabel.isHidden = true
+        scrollView.mj_header = refreshHeader
+        defaultSelectedIndex = 0
         reloadData()
-        scrollToSlide(at: 0, animated: false)
+    }
+    
+    @objc
+    private func refreshAction() {
+        DispatchQueue.global().asyncAfter(deadline: .now()+Double.random(in: 0..<2)) {
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else {
+                    return
+                }
+                guard let currentIndex = self.currentIndex else {
+                    return
+                }
+                self.badges[currentIndex] = BadgeType.random
+                self.reloadBadgeInSwitcher()
+                self.scrollView.mj_header.endRefreshing()
+            }
+        }
     }
 
 }
