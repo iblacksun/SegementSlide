@@ -137,23 +137,15 @@ extension SegementSlideViewController {
         }
         if switcherView.trailingConstraint == nil {
             switcherView.trailingConstraint = switcherView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        }/*
-HEAD
-        if segementSlideSwitcherView.heightConstraint == nil {
-            segementSlideSwitcherView.heightConstraint = segementSlideSwitcherView.heightAnchor.constraint(equalToConstant: switcherHeight)
-        } else {
-            if segementSlideSwitcherView.heightConstraint?.constant != switcherHeight {
-                segementSlideSwitcherView.heightConstraint?.constant = switcherHeight
-
+        }
         if switcherView.heightConstraint == nil {
             switcherView.heightConstraint = switcherView.heightAnchor.constraint(equalToConstant: switcherHeight)
         } else {
             if switcherView.heightConstraint?.constant != switcherHeight {
                 switcherView.heightConstraint?.constant = switcherHeight
-upstream/master
+
             }
-        }*/
-        
+        }
         contentView.translatesAutoresizingMaskIntoConstraints = false
         if contentView.topConstraint == nil {
             contentView.topConstraint = contentView.topAnchor.constraint(equalTo: switcherView.bottomAnchor)

@@ -13,12 +13,11 @@ DEPENDENCIES:
   - SnapKit
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
+    - JXSegmentedView
     - MBProgressHUD
     - MJRefresh
     - SnapKit
-  trunk:
-    - JXSegmentedView
 
 EXTERNAL SOURCES:
   SegementSlide:
@@ -33,4 +32,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 9b4b34f47bab00d35f35b1ffdc5ce19ee897074e
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.2

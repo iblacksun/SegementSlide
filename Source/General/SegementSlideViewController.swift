@@ -30,22 +30,6 @@ open class SegementSlideViewController: UIViewController {
     internal var lastChildBouncesTranslationY: CGFloat = 0
     internal var cachedChildViewControllerIndex: Set<Int> = Set()
     
-    /*HEAD
-    public var slideScrollView: UIScrollView {
-        return segementSlideScrollView
-    }
-    public var slideHeaderView: UIView {
-        return segementSlideHeaderView
-    }
-    public var slideSwitcherView: UIView {
-        return segementSlideSwitcherView
-    }
-    public var slideContentView: UIView {
-        return segementSlideContentView
-    }
-    public var slideContentScrollView: UIScrollView {
-        return segementSlideContentView.scrollView
-    }*/
     public var headerStickyHeight: CGFloat {
         let headerHeight = headerView.frame.height.rounded(.up)
         if edgesForExtendedLayout.contains(.top) {
@@ -91,9 +75,6 @@ open class SegementSlideViewController: UIViewController {
         } else {
             return nil
         }
-    }
-    open func createSwicherView() -> SegementSlideSwitcherView {
-        return SegementSlideSwitcherView()
     }
     
     open func segementSlideSwitcherView() -> SegementSlideSwitcherDelegate {

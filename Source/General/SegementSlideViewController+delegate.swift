@@ -15,7 +15,6 @@ extension SegementSlideViewController: UIScrollViewDelegate {
         resetCurrentChildViewControllerContentOffsetY()
         return true
     }
-    
 }
 
 extension SegementSlideViewController: SegementSlideContentDelegate {
