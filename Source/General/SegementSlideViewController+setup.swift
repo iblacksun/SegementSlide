@@ -140,12 +140,11 @@ extension SegementSlideViewController {
         }
         if switcherView.heightConstraint == nil {
             switcherView.heightConstraint = switcherView.heightAnchor.constraint(equalToConstant: switcherHeight)
-        } else {
+        }/* else {
             if switcherView.heightConstraint?.constant != switcherHeight {
                 switcherView.heightConstraint?.constant = switcherHeight
-
             }
-        }
+        }*/
         contentView.translatesAutoresizingMaskIntoConstraints = false
         if contentView.topConstraint == nil {
             contentView.topConstraint = contentView.topAnchor.constraint(equalTo: switcherView.bottomAnchor)
@@ -173,7 +172,7 @@ extension SegementSlideViewController {
         }
     }
     
-    internal func setupBounces() {
+    public func setupBounces() {
         innerBouncesType = bouncesType
         resetScrollViewStatus()
     }

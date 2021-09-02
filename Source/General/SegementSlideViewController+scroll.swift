@@ -80,6 +80,16 @@ extension SegementSlideViewController {
         case .child:
             if !canChildViewScroll {
                 childScrollView.contentOffset.y = 0
+                /*if childContentOffsetY > 0 {
+                    canChildViewScroll = true
+                } else {
+                    childScrollView.contentOffset.y = 0
+                }
+                debugPrint(lastChildOffsetY)
+                debugPrint(childContentOffsetY)
+                if let value = lastChildOffsetY {
+                }
+                lastChildOffsetY = childContentOffsetY*/
             } else if childContentOffsetY <= 0 {
                 if parentContentOffsetY <= 0 {
                     canChildViewScroll = true

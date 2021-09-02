@@ -28,6 +28,7 @@ open class SegementSlideViewController: UIViewController {
     internal var canParentViewScroll: Bool = true
     internal var canChildViewScroll: Bool = false
     internal var lastChildBouncesTranslationY: CGFloat = 0
+    internal var lastChildOffsetY: CGFloat?
     internal var cachedChildViewControllerIndex: Set<Int> = Set()
     
     public var headerStickyHeight: CGFloat {

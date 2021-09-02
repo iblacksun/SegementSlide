@@ -20,11 +20,11 @@ public protocol SegementSlideDefaultSwitcherViewDelegate: class {
     func segementSwitcherView(_ segementSlideSwitcherView: SegementSlideDefaultSwitcherView, showBadgeAtIndex index: Int) -> BadgeType
 }
 
-public class SegementSlideDefaultSwitcherView: UIView {
+open class SegementSlideDefaultSwitcherView: UIView {
     
     public private(set) var scrollView = UIScrollView()
     private let indicatorView = UIView()
-    private var titleButtons: [UIButton] = []
+    public private(set) var titleButtons: [UIButton] = []
     private var innerConfig: SegementSlideDefaultSwitcherConfig = SegementSlideDefaultSwitcherConfig.shared
     
     /// you should call `reloadData()` after set this property.

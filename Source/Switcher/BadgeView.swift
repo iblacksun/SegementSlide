@@ -37,7 +37,7 @@ private final class BadgeView: UILabel {
 
 private var badgeKey: Void?
 
-internal extension UIView {
+public extension UIView {
     
     var badge: Badge {
         get {
@@ -54,7 +54,7 @@ internal extension UIView {
     
 }
 
-internal final class Badge {
+public final class Badge {
     
     private let badgeView: BadgeView
     
@@ -77,7 +77,7 @@ internal final class Badge {
     }
     
     /// font for the `.count` type
-    internal var font: UIFont = UIFont.systemFont(ofSize: 10, weight: .regular) {
+    public var font: UIFont = UIFont.systemFont(ofSize: 10, weight: .regular) {
         didSet {
             if case .count = type {
                 badgeView.font = font
@@ -86,7 +86,7 @@ internal final class Badge {
     }
     
     /// Badge's height, Badge's cornerRadius is half of the value
-    internal var height: CGFloat = 9 {
+    public var height: CGFloat = 9 {
         didSet {
             updateHeight()
         }
@@ -95,14 +95,14 @@ internal final class Badge {
     /// Badge's center position relative to the parent view's center position displacement
     /// A positive x means moving to the right
     /// A positive y means moving to the bottom
-    internal var offset: CGPoint = .zero {
+    public var offset: CGPoint = .zero {
         didSet {
             remakeConstraints()
         }
     }
     
     /// the type of `Badge`
-    internal var type: BadgeType = .none {
+    public var type: BadgeType = .none {
         didSet {
             switch type {
             case .none, .point:
