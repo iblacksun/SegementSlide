@@ -65,6 +65,7 @@ public class SegementSlideContentView: UIView {
         scrollView.isPagingEnabled = true
         scrollView.showsHorizontalScrollIndicator = false
         scrollView.showsVerticalScrollIndicator = false
+        scrollView.isDirectionalLockEnabled = true
         scrollView.backgroundColor = .clear
         backgroundColor = .white
     }
