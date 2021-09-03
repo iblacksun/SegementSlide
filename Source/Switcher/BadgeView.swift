@@ -25,7 +25,7 @@ public enum BadgeType {
 
 private final class BadgeView: UILabel {
     
-    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+    fileprivate override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
         if let superview = superview {
             return superview
         } else {

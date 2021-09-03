@@ -11,7 +11,7 @@ import SegementSlide
 import MBProgressHUD
 import MJRefresh
 
-class LanguageCenterViewController: BaseTransparentSlideViewController {
+class LanguageCenterViewController: BaseTransparentSlideDefaultViewController {
     
     private let id: Int
     private var badges: [Int: BadgeType] = [:]
@@ -43,7 +43,7 @@ class LanguageCenterViewController: BaseTransparentSlideViewController {
         return .parent
     }
     
-    override var headerView: UIView {
+    override func segementSlideHeaderView() -> UIView {
         guard let _ = language else {
             let view = UIView()
             view.backgroundColor = .clear
@@ -60,7 +60,7 @@ class LanguageCenterViewController: BaseTransparentSlideViewController {
         return centerHeaderView
     }
     
-    override var switcherConfig: SegementSlideSwitcherConfig {
+    override var switcherConfig: SegementSlideDefaultSwitcherConfig {
         var config = super.switcherConfig
         config.type = .tab
         return config
@@ -70,7 +70,7 @@ class LanguageCenterViewController: BaseTransparentSlideViewController {
         guard let _ = language else {
             return []
         }
-        return DataManager.shared.mineLanguageTitles
+        return DataManager.shared.languageCenterTitles
     }
     
     override func showBadgeInSwitcher(at index: Int) -> BadgeType {
@@ -89,8 +89,10 @@ class LanguageCenterViewController: BaseTransparentSlideViewController {
         }
         let viewController = ContentViewController()
         viewController.refreshHandler = { [weak self] in
-            guard let self = self else { return }
-            self.slideScrollView.mj_header.endRefreshing()
+            guard let self = self else {
+                return
+            }
+            self.scrollView.mj_header.endRefreshing()
             self.badges[index] = BadgeType.random
             self.reloadBadgeInSwitcher()
         }
@@ -105,10 +107,11 @@ class LanguageCenterViewController: BaseTransparentSlideViewController {
         } else {
             topLayoutLength = topLayoutGuide.length
         }
-        slideScrollView.mj_header.ignoredScrollViewContentInsetTop = -topLayoutLength
+        scrollView.mj_header.ignoredScrollViewContentInsetTop = -topLayoutLength
     }
     
-    @objc func backAction() {
+    @objc
+    func backAction() {
         dismiss(animated: true, completion: nil)
     }
     
@@ -127,17 +130,19 @@ class LanguageCenterViewController: BaseTransparentSlideViewController {
         refreshHeader.setTitle("", for: .pulling)
         refreshHeader.setTitle("", for: .refreshing)
         refreshHeader.setTitle("", for: .willRefresh)
-        slideScrollView.mj_header = refreshHeader
+        scrollView.mj_header = refreshHeader
         let hud = MBProgressHUD.showAdded(to: view, animated: true)
-        DispatchQueue.global().asyncAfter(deadline: .now()+Double.random(in: 0..<3)) {
+        DispatchQueue.global().asyncAfter(deadline: .now()+Double.random(in: 0..<2)) {
             DispatchQueue.main.async { [weak self] in
-                guard let self = self else { return }
+                guard let self = self else {
+                    return
+                }
                 if let language = DataManager.shared.language(by: self.id) {
                     hud.hide(animated: true)
                     self.language = language
                     self.centerHeaderView.config(language, viewController: self)
+                    self.defaultSelectedIndex = 1
                     self.reloadData()
-                    self.scrollToSlide(at: 1, animated: false)
                 } else {
                     hud.label.text = "Language not found!"
                     hud.hide(animated: true, afterDelay: 0.5)
@@ -146,9 +151,10 @@ class LanguageCenterViewController: BaseTransparentSlideViewController {
         }
     }
     
-    @objc private func refreshAction() {
+    @objc
+    private func refreshAction() {
         guard let contentViewController = currentSegementSlideContentViewController as? ContentViewController else {
-            slideScrollView.mj_header.endRefreshing()
+            scrollView.mj_header.endRefreshing()
             return
         }
         contentViewController.refresh()
@@ -161,7 +167,9 @@ class LanguageCenterViewController: BaseTransparentSlideViewController {
     
     override func scrollViewDidScroll(_ scrollView: UIScrollView, isParent: Bool) {
         super.scrollViewDidScroll(scrollView, isParent: isParent)
-        guard isParent else { return }
+        guard isParent else {
+            return
+        }
         centerHeaderView.setBgImageTopConstraint(scrollView.contentOffset.y)
     }
     
