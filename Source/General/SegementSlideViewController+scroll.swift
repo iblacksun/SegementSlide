@@ -79,7 +79,9 @@ extension SegementSlideViewController {
             }
         case .child:
             if !canChildViewScroll {
-                //childScrollView.contentOffset.y = 0
+                if segementChildMustTop {
+                    childScrollView.contentOffset.y = 0
+                }
             } else if childContentOffsetY <= 0 {
                 if parentContentOffsetY <= 0 {
                     canChildViewScroll = true

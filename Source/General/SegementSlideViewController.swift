@@ -29,7 +29,7 @@ open class SegementSlideViewController: UIViewController {
     internal var canChildViewScroll: Bool = false
     internal var lastChildBouncesTranslationY: CGFloat = 0
     internal var cachedChildViewControllerIndex: Set<Int> = Set()
-    
+    public var segementChildMustTop = true
     public var headerStickyHeight: CGFloat {
         let headerHeight = headerView.frame.height.rounded(.up)
         if edgesForExtendedLayout.contains(.top) {
