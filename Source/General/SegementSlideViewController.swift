@@ -39,13 +39,13 @@ open class SegementSlideViewController: UIViewController {
         }
     }
     public var switcherHeight: CGFloat {
-        return switcherView.ssDataSource?.height ?? 44
+        return switcherView?.ssDataSource?.height ?? 44
     }
     public var contentViewHeight: CGFloat {
         return view.bounds.height-topLayoutLength-switcherHeight
     }
     public var currentIndex: Int? {
-        return switcherView.ssSelectedIndex
+        return switcherView?.ssSelectedIndex
     }
     public var currentSegementSlideContentViewController: SegementSlideContentScrollViewDelegate? {
         guard let currentIndex = currentIndex else {
@@ -57,8 +57,8 @@ open class SegementSlideViewController: UIViewController {
     /// you should call `reloadData()` after set this property.
     open var defaultSelectedIndex: Int? {
         didSet {
-            switcherView.ssDefaultSelectedIndex = defaultSelectedIndex
-            contentView.defaultSelectedIndex = defaultSelectedIndex
+            switcherView?.ssDefaultSelectedIndex = defaultSelectedIndex
+            contentView?.defaultSelectedIndex = defaultSelectedIndex
         }
     }
     
