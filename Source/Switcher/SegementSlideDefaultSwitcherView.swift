@@ -81,6 +81,10 @@ open class SegementSlideDefaultSwitcherView: UIView {
         reloadBadges()
         reloadDataWithSelectedIndex()
     }
+    /// relayout config for switcher
+    public func reloadConfig() {
+        innerConfig = config
+    }
     
     /// reload all badges in `SegementSlideSwitcherView`
     public func reloadBadges() {
@@ -121,7 +125,7 @@ open class SegementSlideDefaultSwitcherView: UIView {
     }
     
     /// select one item by index
-    public func selectItem(at index: Int, animated: Bool) {
+    open func selectItem(at index: Int, animated: Bool) {
         updateSelectedButton(at: index, animated: animated)
     }
     
