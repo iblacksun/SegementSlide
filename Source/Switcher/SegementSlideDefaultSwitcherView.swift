@@ -186,7 +186,7 @@ extension SegementSlideDefaultSwitcherView {
             return
         }
         guard !titleButtons.isEmpty else {
-            scrollView.contentSize = CGSize(width: bounds.width, height: bounds.height)
+            scrollView.contentSize = CGSize(width: scrollView.bounds.width, height: bounds.height)
             return
         }
         var offsetX = innerConfig.horizontalMargin
@@ -194,7 +194,7 @@ extension SegementSlideDefaultSwitcherView {
             let buttonWidth: CGFloat
             switch innerConfig.type {
             case .tab:
-                buttonWidth = (bounds.width-innerConfig.horizontalMargin*2)/CGFloat(titleButtons.count)
+                buttonWidth = (scrollView.bounds.width-innerConfig.horizontalMargin*2)/CGFloat(titleButtons.count)
             case .segement:
                 let title = titleButton.title(for: .normal) ?? ""
                 let normalButtonWidth = title.boundingWidth(with: innerConfig.normalTitleFont)
@@ -211,7 +211,7 @@ extension SegementSlideDefaultSwitcherView {
         }
         switch innerConfig.type {
         case .tab:
-            scrollView.contentSize = CGSize(width: bounds.width, height: bounds.height)
+            scrollView.contentSize = CGSize(width: scrollView.bounds.width, height: bounds.height)
         case .segement:
             scrollView.contentSize = CGSize(width: offsetX-innerConfig.horizontalSpace+innerConfig.horizontalMargin, height: bounds.height)
         }
